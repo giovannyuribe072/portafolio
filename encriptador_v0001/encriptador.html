@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="encriptador.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" /> 
+
+</head>
+
+<body>
+    <a class="navbar-brand"><span class="fw-bolder text-primary"><img src="img/htsas.png" style="width: 100px;" alt="">
+            Giovanny Giannini Uribe Acevedo</span></a>
+    <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline">Presenta Encriptador de Texto con
+            Javascript</span></h1>
+    <main class="main">
+
+        <div class="container px-5 pb-5">
+            <div class="row gx-5 align-items-center">
+                <div class="col-xxl-7">
+                    <!-- Header text content-->
+                    <div class="text-xxl-start">
+                        <!-- Input Group -->
+                        <div class="form-group">
+                            <div class="fs-3 fw-light text-muted">Mensaje a encriptar:</div> 
+                            <div class="input-group input-group-merge input-group-pill"> 
+                                <input style="height: 100px;" id="input-texto" type="text" class="form-control"  
+                                    placeholder="Ingrese el texto aqui!" aria-label="Ingrese el texto aqui!"
+                                    aria-describedby="inputGroupPilledFullNameAddOn">
+                            </div>
+                            <h1 class="fs-3 fw-light text-muted"><span class="text-gradient d-inline">Utiliza los botones para encriptar y desencriptar</span></h1>
+                            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
+                                <input  class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" type="button" value="Encriptar!" id="btn-encriptar">
+                                <input  class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" type="button" value="Desencriptar!" id="btn-desencriptar">    
+                            </div>
+                         
+                        </div>
+
+                        <!-- End Input Group -->
+                    </div>
+                </div>
+                <div class="col-xxl-5">
+                    <div class="text-xxl-start"> 
+                        <div class="fs-3 fw-light text-muted">Mensaje encriptado:</div> 
+                                <div  class="input-group input-group-merge input-group-pill"> 
+                                    <input class="text-input-salida form-control"  id="msg" style="height: 100px;"   type="text"  
+                                        aria-describedby="inputGroupPilledFullNameAddOn">
+                                </div>
+                                <h1 class="fs-3 fw-light text-muted"><span class="text-gradient d-inline">Utiliza el boton para copiar!</span></h1>
+                                <input data-clipboard-target="#msg"  class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" type="button" value="Copiar!" onclick="copiarAlPortapapeles()" >    
+                            </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="encriptador.js"></script>  
+</body>
+
+</html>
